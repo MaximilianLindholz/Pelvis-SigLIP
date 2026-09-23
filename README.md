@@ -120,3 +120,9 @@ Code: MIT. Model weights are released for clinical research use — see
 each model's page on Hugging Face for details. This is a research tool,
 not a diagnostic device; it has not been validated for clinical decision
 support.
+
+## Acknowledgments
+
+Claude (Anthropic) was used to assist with portions of the code in this
+repository and the paper's manuscript, as noted in the paper's
+acknowledgments.
