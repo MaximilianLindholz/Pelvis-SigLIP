@@ -1,0 +1,9 @@
+torch>=2.1
+transformers>=4.44
+open_clip_torch>=2.24
+pillow
+numpy
+nibabel
+matplotlib
+jupyter
+huggingface_hub

@@ -1,0 +1,25 @@
+# Model weights are too large for a plain git repo (GitHub hard-caps
+# individual files at 100MB). Push these to the Hugging Face Hub or track
+# with Git LFS instead — everything else in checkpoints/ (config, metrics,
+# label classes, README) is small and safe to commit so the repo documents
+# exactly what was released, even before the weights are uploaded anywhere.
+checkpoints/**/backbone/
+checkpoints/**/*.safetensors
+checkpoints/**/*.pt
+checkpoints/**/*.bin
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.egg-info/
+.DS_Store
+
+# SLURM logs
+slurm/*.out
+slurm/*.err
+
+# local scratch data — never commit patient thumbnails or scan data
+data/
+*.nii
+*.nii.gz
+release.log

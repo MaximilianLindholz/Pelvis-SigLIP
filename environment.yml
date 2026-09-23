@@ -1,0 +1,19 @@
+name: pelvis-siglip
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch>=2.1
+  - pytorch-cuda=12.1
+  - pip
+  - pip:
+      - transformers>=4.44
+      - open_clip_torch>=2.24
+      - pillow
+      - numpy
+      - nibabel          # reads .nii / .nii.gz files
+      - matplotlib
+      - jupyter
+      - huggingface_hub  # downloads the checkpoints automatically
